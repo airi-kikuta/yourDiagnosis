@@ -1,0 +1,77 @@
+
+body {
+    font-family: arial ;
+}
+
+a {
+    color: #000;
+    text-decoration:none;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.title {
+    margin: 0 0 60px;
+}
+
+
+th {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3;
+    padding: 0 50px 0 0;
+}
+
+td, th {
+    border-bottom: 1px dashed #dcdcdc;
+}
+
+
+main {
+    width: 600px;
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+.chart {
+    width: 700px;
+    margin: 50px auto 100px;
+    text-align: center;
+}
+
+
+table {
+    margin: 0 0 60px 80px;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+input {
+    accent-color: #696969;
+    transform: scale(1.5);
+}
+
+
+button {
+  color: #fff;
+  background-color: #696969;
+  width: 160px;
+  height: 40px;
+  border-radius: 100vh;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #fff;
+    background: #d3d3d3;
+}
+
+

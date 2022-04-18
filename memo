@@ -1,0 +1,15 @@
+      case1 血液不足
+      case2 血行不良
+      case3 自律神経の乱れ
+      case4 糖質過多
+      case5 プロスタグランジン過多
+      case6 セロトニン不足
+      case7 質的栄養不足
+
+      case1 += 1
+      case2 += 1
+      case3 += 1
+      case4 += 1
+      case5 += 1
+      case6 += 1
+      case7 += 1

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>your </title>
+    <link rel="stylesheet" media="all" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="calculate.js"></script>
+</head>
+
+<a href="">戻る</a>
+</header>
+<main>
+
+    <div class="title">
+        <h1>PMS傾向分析</h1>
+        <p>生理前に現れる症状や、普段の生活習慣に当てはまるものに</p>
+        <p>チェックを入れてください</p>
+    </div>
+
+
+
+    <table>
+        <form action="" id="form">
+
+
+            <tr>
+                <th>Q1. 締め付けられるような頭痛がある</th>
+                <td>
+                    <input  type="checkbox" name="q1" value="q1y">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <th>Q2. ズキズキするような頭痛がある</th>
+                <td>
+                    <input  type="checkbox" name="q2" value="q2y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q3. 異常な眠気がある</th>
+                <td>
+                    <input  type="checkbox" name="q3" value="q3y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q4. 疲れやすくなる</th>
+                <td>
+                    <input  type="checkbox" name="q4" value="q4y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q5. むくみやすくなる</th>
+                <td>
+                    <input  type="checkbox" name="q5" value="q5y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q6. 便秘になる</th>
+                <td>
+                    <input  type="checkbox" name="q6" value="q6y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q7. 下痢になる</th>
+                <td>
+                    <input  type="checkbox" name="q7" value="q7y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q8. 生理痛のような下腹部痛がある</th>
+                <td>
+                    <input  type="checkbox" name="q8" value="q8y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q9. 胃痛がある</th>
+                <td>
+                    <input  type="checkbox" name="q9" value="q9y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q10. 吐き気がある</th>
+                <td>
+                    <input  type="checkbox" name="q10" value="q10y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q11. 異常な食欲になる</th>
+                <td>
+                    <input  type="checkbox" name="q11" value="q11y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q12. 腰が痛くなる</th>
+                <td>
+                    <input  type="checkbox" name="q12" value="q12y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q13. 眠れなくなる</th>
+                <td>
+                    <input  type="checkbox" name="q13" value="q13y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q14. 肌が荒れる</th>
+                <td>
+                    <input  type="checkbox" name="q14" value="q14y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q15. 肩や首などがコリやすくなる</th>
+                <td>
+                    <input  type="checkbox" name="q15" value="q15y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q16. 貧血になる</th>
+                <td>
+                    <input  type="checkbox" name="q16" value="q16y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q17. 乳房痛がある</th>
+                <td>
+                    <input  type="checkbox" name="q17" value="q17y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q18. 些細なことでイライラしてしまう</th>
+                <td>
+                    <input  type="checkbox" name="q18" value="q18y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q19. キレてしまう</th>
+                <td>
+                    <input  type="checkbox" name="q19" value="q19y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q20. 憂うつな気分になる</th>
+                <td>
+                    <input  type="checkbox" name="q20" value="q20y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q21. 不安に襲われる</th>
+                <td>
+                    <input  type="checkbox" name="q21" value="q21y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q22. なんでも悲観的になる</th>
+                <td>
+                    <input  type="checkbox" name="q22" value="q22y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q23. 無気力になる</th>
+                <td>
+                    <input  type="checkbox" name="q23" value="q23y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q24. ハラハラと焦るような焦燥感がある</th>
+                <td>
+                    <input  type="checkbox" name="q24" value="q24y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q25. 運動の習慣がない</th>
+                <td>
+                    <input  type="checkbox" name="q25" value="q25y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q26. デスクワークが多い</th>
+                <td>
+                    <input  type="checkbox" name="q26" value="q26y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q27. スマホやPCの画面を1日8時間以上見ている</th>
+                <td>
+                    <input  type="checkbox" name="q27" value="q27y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q28. 外食やコンビニ食が多い</th>
+                <td>
+                    <input  type="checkbox" name="q28" value="q28y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q29. 胃腸が弱い</th>
+                <td>
+                    <input  type="checkbox" name="q29" value="q29y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q30. 1日分の水分を摂れていない</th>
+                <td>
+                    <input  type="checkbox" name="q30" value="q30y">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q31. 1日分のタンパク質を摂れていない</th>
+                <td>
+                    <input  type="checkbox" name="q31" value="q31y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q32. 1日分の鉄分を摂れていない</th>
+                <td>
+                    <input  type="checkbox" name="q32" value="q32y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q33. 炭水化物中心</th>
+                <td>
+                    <input  type="checkbox" name="q33" value="q33y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q34. 甘いものやジュースが好き</th>
+                <td>
+                    <input  type="checkbox" name="q34" value="q34y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q35. ストレスやプレッシャーを感じている</th>
+                <td>
+                    <input  type="checkbox" name="q35" value="q35y">
+
+                </td>
+            </tr>
+
+            <tr>
+                <th>Q36. 真完璧主義である</th>
+                <td>
+                    <input  type="checkbox" name="q36" value="q36y">
+
+                </td>
+            </tr>
+
+        </form>
+    </table>
+    <button id="btn">分析する</button>
+</main>
+
+
+
+
+<div class="chart">
+    <canvas id="myChart"></canvas>
+</div>
+
+<a href=""> < 傾向別対処法へ</a>
+
+<footer id="footer">
+    <p>your diagnosis ver 0.0.1</p>
+</footer>
+
+
+</body>
+</html>
+
+
