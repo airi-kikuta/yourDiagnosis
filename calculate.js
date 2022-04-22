@@ -262,11 +262,6 @@ $(function() {
 
 
 
-
-
-
-
-
         // チャートを描画
         let canvas = $("#myChart");
         const data = {
@@ -280,9 +275,7 @@ $(function() {
               '質的栄養不足'
             ],
             datasets: [{
-              label: 'あなたのPMS傾向結果',
-              // data: [1, 5, 2, 4, 2, 1, 5],
-            //   data: [65, 59, 90, 81, 56, 55, 40],
+              label: 'PMS傾向結果',
               data: [case1, case2, case3, case4, case5, case6, case7],
               fill: true,
               backgroundColor: 'rgba(255,166,24,0.7)',
@@ -304,6 +297,18 @@ $(function() {
                     }
                 },
                 responsive: true,
+                scale: {
+                  gridLines: {
+                      lineWidth: [1, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+                  },
+                  r: {
+                      min: 0,
+                      max: Math.max(case1,case2,case3,case5,case4,case6,case7),
+                      stepSize: 1,
+                      display: false,
+                      precision: 0,
+                  }
+              }
             }
         }
         console.log(setup)
@@ -311,14 +316,55 @@ $(function() {
         console.log(chart)
         $("#case1").html(case1);
 
-        // TODO: スコア次第で表示する文言を決めて、表示する
-        if(case1 >= 1) {
-          $("#case1").html("<div>血液不足だよ!</div>");
+
+
+
+        let case1m = ''
+        let case2m = ''
+        let case3m = ''
+        let case4m = ''
+        let case5m = ''
+        let case6m = ''
+        let case7m = ''
+
+
+
+        case1m = getCase1Message(case1)
+        case2m = getCase1Message(case2)
+        case3m = getCase1Message(case3)
+        case4m = getCase1Message(case4)
+        case5m = getCase1Message(case5)
+        case6m = getCase1Message(case6)
+        case7m = getCase1Message(case7)
+
+
+
+        function getCase1Message(caseCount) {
+          let message = ''
+          if(caseCount === 0) {
+            message = 'A'
+          } else if(caseCount === 1) {
+            message = 'B'
+          } else if(caseCount === 2) {
+            message = 'C'
+          } else if(caseCount === 3) {
+            message = 'D'
+          } else if(caseCount === 4) {
+            message = 'E'
+          } else if(caseCount === 5) {
+            message = 'F'
+          }
+          return message
         }
 
-        if(case1 >= 1 && case2 >= 1) {
-          $("#case1").html("<div>血液不足と血行不良だよ!</div>");
-        }
+
+
+
+        $(".card").css("display", "block")
+
+        $("#case1").html(`<div class=''>${case1m}</div>`);
+
+
 
         // ボタンを一度押したら押せなくする
         $(this).addClass("disabled");

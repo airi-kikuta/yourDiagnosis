@@ -13,3 +13,72 @@
       case5 += 1
       case6 += 1
       case7 += 1
+
+
+      ;       options: {
+      ;           plugins: {
+      ;               title: {
+      ;                   display: true,
+      ;                   // text: "あなたのPMS傾向結果"
+      ;               }
+      ;           },
+      ;           responsive: true,
+      ;           scale: {
+      ;             pointLabels: {       // 軸のラベル（"国語"など）
+      ;                 fontSize: 16,         // 文字の大きさ
+      ;                 fontColor: "green"    // 文字の色
+      ;             },
+      ;             ticks: {             // 目盛り
+      ;                 min: 0,              // 最小値
+      ;                 max: 5,            // 最大値
+      ;                 stepSize: 20,        // 目盛の間隔
+      ;                 fontSize: 12,        // 目盛り数字の大きさ
+      ;                 fontColor: "purple"  // 目盛り数字の色
+      ;             },
+      ;           }
+      ;       }
+
+      ;   if(case1 <= 1) { //1以下だったら
+      ;     case1m = '血液不足じゃないよ'
+      ;   } else { //2以上だったら
+      ;     case1m = '血液不足だよ'
+      ;   }
+
+
+
+      ;   // スコア次第で表示する文言を決めて、表示する
+      ;   // if(case1 === 0) { //0だったら
+      ;   //   case1m = '0,血液不足じゃないよ'
+      ;   // } else if (case1 === 1){ //1だったら
+      ;   //   case1m = '1,血液不足だよ'
+
+      ;   // } else if (case1 === 2){ //2だったら
+      ;   //   case1m = '2,血液不足だよ'
+
+      ;   // } else if (case1 === 3){ //2だったら
+      ;   //   case1m = '3,血液不足だよ'
+
+      ;   // } else if (case1 === 4){ //2だったら
+      ;   //   case1m = '4,血液不足だよ'
+
+      ;   // }
+
+
+      ; // function displayMesseage(variable, caseCount, message) {
+      ;   //   if(variable === 0) { //0だったら
+      ;   //     case1m = '0,血液不足じゃないよ'
+      ;   //   } else if (variable === 1){ //1だったら
+      ;   //     case1m = '1,血液不足だよ'
+
+      ;   //   } else if (variable === 2){ //2だったら
+      ;   //     case1m = '2,血液不足だよ'
+
+      ;   //   } else if (variable === 3){ //2だったら
+      ;   //     case1m = '3,血液不足だよ'
+
+      ;   //   } else if (variable === 4){ //2だったら
+      ;   //     case1m = '4,血液不足だよ'
+
+      ;   //   }
+
+      ;   // }
