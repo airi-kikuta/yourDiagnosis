@@ -287,14 +287,16 @@ $(function() {
           };
           console.log(data)
         let setup = {
+            // type: 'radar',
             type: 'radar',
             data: data,
             options: {
                 plugins: {
                     title: {
                         display: true,
-                        // text: "あなたのPMS傾向結果"
-                    }
+                    },
+
+
                 },
                 responsive: true,
                 scale: {

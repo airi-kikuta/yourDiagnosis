@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="calculate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 
 
@@ -17,8 +18,8 @@
 
     <div class="title">
         <h1>PMS傾向分析</h1>
-        <p>生理前に現れる症状や、普段の生活習慣に当てはまるものに</p>
-        <p>チェックを入れてください</p>
+        <h4>生理前に現れる症状や、普段の生活習慣に当てはまるものに</h4>
+        <h4>チェックを入れてください</h4>
     </div>
 
 
@@ -314,7 +315,7 @@
     <canvas id="myChart"></canvas>
 </div>
 
-
+<!-- 医師監修後 -->
 
 <!-- <div class="card" style="display:none">←書き終わったら書き足す -->
 
@@ -333,32 +334,128 @@
             </div>
         </div>
         <div class="item">
-            <div class="item-title">自律神経</div>
+            <div class="item-title">自律神経の乱れ</div>
             <div class="item-content">
                 <div id="case3"></div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="item-title">糖質過多</div>
+            <div class="item-content">
+                <div id="case4"></div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="item-title">プロスタグランジン過多</div>
+            <div class="item-content">
+                <div id="case5"></div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="item-title">セロトニン不足</div>
+            <div class="item-content">
+                <div id="case6"></div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="item-title">質的栄養不足</div>
+            <div class="item-content">
+                <div id="case7"></div>
             </div>
         </div>
 
 
 
 
-        <div id="case1"></div>
-        <div id="case2"></div>
-        <div id="case3"></div>
-        <div id="case4"></div>
-        <div id="case5"></div>
-        <div id="case6"></div>
-        <div id="case6"></div>
+
     </div>
 </div> -->
 
-<button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">　対処法を見る > </button>
+
+
+
+<div class="text-wrapper">
+    <div class="text-content">
+        <h2>血液不足</h2>
+        <p>血液が作れない原因の一つに、胃腸の不調があります。
+            栄養を消化吸収する胃腸が不調な時は、どんなに栄養を摂っても吸収が出来ず、血液を作ることができません。
+            胃腸が不調を起こす原因の一つに、内臓下垂があります。
+            内臓は周りの筋肉によって位置が定められており、筋肉が弱ると内臓はどんどん下へ下がってしまいます。
+            内臓下垂を治す筋トレとともに、血液を作り出す栄養素を積極的に摂りましょう。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+    <div class="text-content">
+        <h2>血行不良</h2>
+        <p>血液は全身に栄養と酸素とホルモンを運び、同時に不要なものを回収しています。
+            その血液が、ドロドロと血液が体の中で停滞している状態です。
+            血行不良は全身の代謝を下げ、身体的症状や精神的症状を引き起こし、
+            ニキビなどの肌荒れも引き起こします。
+            主な原因は、食事の内容、運動不足、筋力不足、水分不足と冷えです。
+            生活習慣の中で改善できるところから始めていきましょう。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+    <div class="text-content">
+        <h2>自律神経の乱れ</h2>
+        <p>自律神経とは、私たちが意識をしなくても働いている体の機能です。
+            呼吸、心拍、体温、血管、筋肉、腸など、あらゆる機能が自動的に働いています。
+            しかしその自律神経は、ストレスや睡眠不足、生理によるホルモンバランスの変化でも乱れてしまいます。
+            PMSは直接女性ホルモンの影響による場合だけでなく、生理前の自律神経の乱れである場合もあり、
+            自律神経のケアでPMSが改善される場合もあります。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+    <div class="text-content">
+        <h2>糖質過多</h2>
+        <p>普段は甘いものや炭水化物など糖質の高いものを食べても、膵臓から出るインスリンによって食後の血糖値は穏やかになります。
+            しかしPMS期ではインスリンの働きが悪くなり、血糖値が乱高下し、低血糖を起こします。
+            低血糖を起こすと、異常なほど甘いものが食べたくなる、異常なほど食欲が止まらない、
+            異常なほどの眠気に襲われるといった症状が現れ、イライラや不安などの精神的な症状も引き起こします。
+            PMS期だけでも糖質を控えた食事を心がけましょう。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+    <div class="text-content">
+        <h2>プロスタグランジン過多</h2>
+        <p>頭痛、生理痛、生理痛のような下腹部痛、腰痛、胃痛など、PMSの中でも「痛み」を感じさせる物質が、
+            プロスタグランジンという物質です。実はこのプロスタグランジンは、私たちの普段の食事の中のある食品から生まれます。
+            それは、オメガ６の油です。オメガ６の油とは、紅花油やコーン油、ひまわり油といった一般的なサラダ油や、ゴマ油などです。
+            これらは体の中で炎症を起こし、様々なところで痛みを生み出します。
+            多くの場所で使われる油ですので、知らず知らずに過剰摂取になっているかもしれません。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+    <div class="text-content">
+        <h2>セロトニン不足</h2>
+        <p>毎月の生理は、排卵日から女性ホルモンの一であるエストロゲンが少しずつ減少することが合図となって始まります。
+            ですので、PMS期にエストロゲンが減少することは全く異常ではありません。
+            ですがこのエストロゲンに連れ添って、幸せを感じるホルモンであるセロトニンも同時に減少してしまいます。
+            そのためPMS期はイライラや憂うつなど、精神的症状も強く出る場合があります。
+            ここではうつ病の改善と同じような、セロトニンを増やすテクニックをご紹介します。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+    <div class="text-content">
+        <h2>質的栄養不足</h2>
+        <p>お腹いっぱい食べているつもりでも、必要な栄養素が摂れていない状態です。
+            パンやうどんなど、炭水化物だけでお腹いっぱいになっていませんか？
+            タンパク質や鉄分などの栄養素が足りていないと、血液やホルモンは作ることができません。
+            ここでは血液を作る栄養素や、ホルモンを作る栄養素をご紹介します。
+        </p>
+        <button class="btn" onclick="location.href='https://your.newsequence.co.jp/posts2/:slug'">対処法を見る > </button>
+    </div>
+</div>
+
+
+
+
 
 
 </main>
 
 <footer id="footer">
-    <p>your diagnosis ver 0.0.1</p>
+    <h3>© 2022 New Sequence Inc. your diagnosis ver 0.0.1</h3>
 </footer>
 
 
